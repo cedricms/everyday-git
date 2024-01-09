@@ -1,0 +1,17 @@
+== We're Working On Multiple Versions
+
+=== Cherry-Pick Single Commit
+
+image::./img/02-cherry-pick.png[Cherry-pick a single commit]
+
+```
+git cherry-pick <COMMIT SHA-1 INDEX>
+```
+
+=== Cherry-Pick Multiple Commits
+
+image::./img/cherry-pick-qua-rebase-example-midpoint.png[Cherry-pick multiple commits]
+
+```
+git cherry-pick C D E
+```

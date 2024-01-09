@@ -21,9 +21,7 @@ include::./section/craft-you-commit-messages.adoc[]
 
 include::./section/something-more-important-has-come-up.adoc[]
 
-== We're Working On multiple Versions
-
-Cherry Pick
+include::./section/we-re-working-on-multiple-versions.adoc[]
 
 == To Merge Or To Rebase?
 
@@ -35,9 +33,12 @@ Interactif rebase.
 
 === Rewrite Old Commit Messages
 
+=== Condense Commits
+
+== Find A Bug
+
+git bisect
+
 == Branch Workflows
 
 === GitFlow
-
-=== Condense Commits
-
