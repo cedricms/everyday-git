@@ -17,15 +17,11 @@ include::./section/main-commands.adoc[]
 
 include::./section/daily-routine.adoc[]
 
-== Craft Your Commit Messages
-
-=== Amend
-
-=== Release Notes
+include::./section/craft-you-commit-messages.adoc[]
 
 == Something More Important Has Come Up
 
-Stash if you are not ready to commit. Yet again, you are on your on branch, you can rewrite your Git history after; more on that later ;) .
+Stash if you are not ready to commit. Yet again, you are on your own branch, you can rewrite your Git history after; more on that later ;) .
 
 == We're Working On multiple Versions
 

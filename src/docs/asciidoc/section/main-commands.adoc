@@ -1,5 +1,7 @@
 == Main Commands
 
+*Know* that they *exist*; no one will be mad at you if you don't know them by heart.
+
 === Daily
 
 * git init

@@ -1,0 +1,21 @@
+== Craft Your Commit Messages
+
+Make it *meaningful* and *short*. For example :
+```
+git commit -m "[ISSUE IDENTIFIER] Adds/Changes/Deletes/Explains/Fixes/ ..."
+```
+
+=== Oops, I Hava Lousy Spelling
+
+For the most recent commit on the branch :
+```
+git commit --amend -m "an updated commit message"
+```
+
+=== Release Notes
+
+This is where commit message crafting pays off :
+
+```
+git log --no-merges --pretty="format:%h : %s%b" --abbrev-commit [YOUR LAST TAG]..[YOUR MOST RECENT TAG OR "HEAD"]
+```
