@@ -1,0 +1,16 @@
+@startuml
+scale 1.0
+
+!define LOCAL_DEVELOPER_SANDBOX circle #lightblue
+
+database "Centralized\nSource\nRepository" as scm #lightgreen
+LOCAL_DEVELOPER_SANDBOX [Local Developer Sandbox 1] as ldsb1
+LOCAL_DEVELOPER_SANDBOX [Local Developer Sandbox 2] as ldsb2
+
+scm --> ldsb1 : checkout / update
+ldsb1 --> scm : commit
+
+scm --> ldsb2 : checkout / update
+ldsb2 --> scm : commit
+
+@enduml

@@ -7,7 +7,7 @@
 * Fullscreen : f
 --
 
-== History
+include::./section/a-bit-about-git.adoc[]
 
 == Git Objects
 
@@ -47,9 +47,3 @@ Interactif rebase.
 
 === Condense Commits
 
-
-// include::./section/atelier-1.adoc[]
-//
-// include::./section/atelier-2.adoc[]
-//
-// include::./section/atelier-3.adoc[]

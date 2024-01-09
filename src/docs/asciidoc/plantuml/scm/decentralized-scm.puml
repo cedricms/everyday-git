@@ -1,0 +1,53 @@
+@startuml
+scale 1.0
+
+!define DEVELOPER circle #lightblue
+
+database "Source\nRepository 1" as scm1 #lightblue
+
+package "Developer 1" {
+    database "Developer\nRepository" as scmd1 #lightgreen
+    DEVELOPER [Local Developer Sandbox] as ldsb1
+}
+
+scm1 -down-> scmd1 : checkout / update
+scmd1 -right-> scm1 : commit
+scmd1 --> ldsb1 : checkout / update
+ldsb1 --> scmd1 : commit
+
+package "Developer 2" {
+    database "Developer\nRepository" as scmd2 #lightgreen
+    DEVELOPER [Local Developer Sandbox] as ldsb2
+}
+
+scm1 --> scmd2 : checkout / update
+scmd2 --> scm1 : commit
+scmd2 -down-> ldsb2 : checkout / update
+ldsb2 -up-> scmd2 : commit
+
+package "Developer 3" #lightgrey {
+    database "Developer\nRepository" as scmd3 #lightgreen
+    DEVELOPER [Local Developer Sandbox] as ldsb3
+}
+
+scmd2 -down-> scmd3 : checkout / update
+scmd3 -up-> scmd2 : commit
+scmd3 --> ldsb3 : checkout / update
+ldsb3 --> scmd3 : commit
+
+database "Source\nRepository 2" as scm2 #lightgrey
+
+scm1 -right-> scm2 : checkout / update
+scm2 -left-> scm1 : commit
+
+package "Developer 4" #lightgrey {
+    database "Developer\nRepository" as scmd4 #lightgreen
+    DEVELOPER [Local Developer Sandbox] as ldsb4
+}
+
+scm2 -down-> scmd4 : checkout / update
+scmd4 -up-> scm2 : commit
+scmd4 --> ldsb4 : checkout / update
+ldsb4 --> scmd4 : commit
+
+@enduml

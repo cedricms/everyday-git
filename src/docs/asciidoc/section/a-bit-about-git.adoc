@@ -1,0 +1,40 @@
+== A Bit About Git
+
+=== Linus Torvalds
+
+image::./img/Linus_Torvalds.jpg[Linus Torvalds]
+
+[.notes]
+--
+Git is a decentralized source code management system written by Linus Torvalds in april 2005 to replace the proprietary software BitKeeper.
+--
+
+=== Centralized vs Decentralized SCM
+
+==== Centralized
+
+["plantuml","centralized-scm", "png"]
+----
+include::../plantuml/scm/centralized-scm.puml[]
+----
+
+[.notes]
+--
+A connection to the SCM is necessary to commit.
+--
+
+=== Centralized vs Decentralized SCM
+
+==== Decentralized
+
+["plantuml","decentralized-scm", "png"]
+----
+include::../plantuml/scm/decentralized-scm.puml[]
+----
+
+[.notes]
+--
+The developers are independent in their commits and branch management.
+
+The system is resilient in case of failure and can be partitioned into protected and third-party spaces.
+--
