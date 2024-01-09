@@ -8,8 +8,7 @@
 --
 
 include::./section/a-bit-about-git.adoc[]
-
-== Git Objects
+include::./section/git-objects.adoc[]
 
 == Main Commands
 

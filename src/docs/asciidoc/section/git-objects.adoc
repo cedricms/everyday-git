@@ -1,0 +1,7 @@
+== Git Objects
+
+* Objects are *indexed* by SHA-1;
+* The *blob* object represent a file's content;
+* The *tree* objet is a list blob objects and the information associated with each blob (file name, permissions, ...);
+* The *commit* objet represents à commit;
+* The *tag* objet is a way to represent a specific commit.
