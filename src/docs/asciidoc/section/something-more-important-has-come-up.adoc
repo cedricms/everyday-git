@@ -1,0 +1,51 @@
+== Something More Important Has Come Up
+
+Put your unstable work aside.
+
+=== Stash
+
+Stash if you are not ready to commit :
+
+```
+git stash save <description>
+```
+
+=== List Your Stashes
+
+```
+git stash list
+```
+
+=== View The Content Of A Stash
+
+List the files in first stash :
+
+```
+git stash show stash@{0}
+```
+
+=== Pop
+
+Retrieve the second stash :
+
+```
+git stash pop stash@{1}
+```
+
+=== Remove All Stashes
+
+```
+git stash clear
+```
+
+=== Delete A Stash
+
+Delete the third stash :
+
+```
+git stash drop stash@{2}
+```
+
+=== Or just commit
+
+Yet again, you are on your own branch, you can rewrite your Git history after; more on that later ;) .

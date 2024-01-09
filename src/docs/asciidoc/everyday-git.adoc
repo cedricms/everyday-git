@@ -19,9 +19,7 @@ include::./section/daily-routine.adoc[]
 
 include::./section/craft-you-commit-messages.adoc[]
 
-== Something More Important Has Come Up
-
-Stash if you are not ready to commit. Yet again, you are on your own branch, you can rewrite your Git history after; more on that later ;) .
+include::./section/something-more-important-has-come-up.adoc[]
 
 == We're Working On multiple Versions
 

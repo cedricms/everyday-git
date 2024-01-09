@@ -17,5 +17,5 @@ git commit --amend -m "an updated commit message"
 This is where commit message crafting pays off :
 
 ```
-git log --no-merges --pretty="format:%h : %s%b" --abbrev-commit [YOUR LAST TAG]..[YOUR MOST RECENT TAG OR "HEAD"]
+git log --no-merges --pretty="format:%h : %s%b" --abbrev-commit <YOUR LAST TAG>..>YOUR MOST RECENT TAG OR "HEAD">
 ```
