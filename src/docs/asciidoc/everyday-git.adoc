@@ -1,5 +1,7 @@
 = Everyday Git
 
+Real Life Use Cases
+
 [.notes]
 --
 * Keyboard shortcuts : ?
@@ -8,9 +10,10 @@
 --
 
 include::./section/a-bit-about-git.adoc[]
+
 include::./section/git-objects.adoc[]
 
-== Main Commands
+include::./section/main-commands.adoc[]
 
 == Daily Routine
 

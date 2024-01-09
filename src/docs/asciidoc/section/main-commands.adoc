@@ -1,0 +1,28 @@
+== Main Commands
+
+=== Daily
+
+* git init
+* git clone
+* git checkout
+* git branch
+* git add
+* git status
+* git commit
+
+=== And Some More
+
+* git fetch
+* git pull
+* git push
+* git merge
+* git stash
+
+=== Some A Bit More Advanced
+
+* git cherry-pick
+* git rebase
+* git bisect
+* git filter-branch
+* git rm
+* etc ...
