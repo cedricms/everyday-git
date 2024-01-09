@@ -15,9 +15,7 @@ include::./section/git-objects.adoc[]
 
 include::./section/main-commands.adoc[]
 
-== Daily Routine
-
-Branch, branch, branch, ...
+include::./section/daily-routine.adoc[]
 
 == Craft Your Commit Messages
 

@@ -1,0 +1,12 @@
+== Daily Routine
+
+=== Branch, Branch, Branch, ...
+
+Branches in Git are "free".
+
+=== See What Others Are Doing And Clean Up
+
+Fetch and prune :
+```
+git fetch --progress "--all" --prune
+```
