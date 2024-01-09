@@ -1,0 +1,55 @@
+= Everyday Git
+
+[.notes]
+--
+* Keyboard shortcuts : ?
+* Speaker notes view : s
+* Fullscreen : f
+--
+
+== History
+
+== Git Objects
+
+== Main Commands
+
+== Daily Routine
+
+Branch, branch, branch, ...
+
+== Craft Your Commit Messages
+
+=== Amend
+
+=== Release Notes
+
+== Something More Important Has Come Up
+
+Stash if you are not ready to commit. Yet again, you are on your on branch, you can rewrite your Git history after; more on that later ;) .
+
+== We're Working On multiple Versions
+
+Cherry Pick
+
+== To Merge Or To Rebase?
+
+== Your Git History Is A Mess
+
+Interactif rebase.
+
+=== Rebase Compared To A Branch
+
+=== Rewrite Old Commit Messages
+
+== Branch Workflows
+
+=== GitFlow
+
+=== Condense Commits
+
+
+// include::./section/atelier-1.adoc[]
+//
+// include::./section/atelier-2.adoc[]
+//
+// include::./section/atelier-3.adoc[]

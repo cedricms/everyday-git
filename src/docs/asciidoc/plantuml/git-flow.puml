@@ -1,0 +1,123 @@
+@startuml
+scale 0.7
+
+!define MAIN_COMMIT circle #lightblue
+!define HOTFIXES_COMMIT circle #orange
+!define RELEASE_COMMIT circle #lightgreen
+!define DEVELOP_COMMIT circle #yellow
+!define FEATURE_COMMIT circle #pink
+
+MAIN_COMMIT "m1" as mainCommit1
+MAIN_COMMIT "m2" as mainCommit2
+MAIN_COMMIT "m3" as mainCommit3
+MAIN_COMMIT "m4" as mainCommit4
+
+rectangle main  #lightblue
+
+main -right-> mainCommit1
+
+note top of mainCommit1 : Tag\n**0.1**
+note top of mainCommit2 : Tag\n**0.2**
+note top of mainCommit3 : Tag\n**1.0**
+note top of mainCommit4 : Tag\n**1.1**
+
+mainCommit1 -right-> mainCommit2
+mainCommit2 -right-> mainCommit3
+mainCommit3 -right-> mainCommit4
+
+rectangle "correctifs à chaud" as hotfixes #orange
+
+HOTFIXES_COMMIT "h1" as hotfixesCommit1
+
+hotfixes -right-> hotfixesCommit1
+mainCommit1 -down-> hotfixesCommit1
+hotfixesCommit1 -up-> mainCommit2
+
+rectangle "branches de recettes" as release #lightgreen
+
+RELEASE_COMMIT "r1" as releaseCommit1
+RELEASE_COMMIT "r2" as releaseCommit2
+RELEASE_COMMIT "r3" as releaseCommit3
+RELEASE_COMMIT "r4" as releaseCommit4
+RELEASE_COMMIT "r5" as releaseCommit5
+
+release -right-> releaseCommit1
+releaseCommit1 -right-> releaseCommit2
+releaseCommit2 -right-> releaseCommit3
+releaseCommit3 -right-> releaseCommit4
+
+releaseCommit4 -up-> mainCommit3
+releaseCommit5 -up-> mainCommit4
+
+rectangle develop #yellow
+
+DEVELOP_COMMIT "d1" as developCommit1
+DEVELOP_COMMIT "d2" as developCommit2
+DEVELOP_COMMIT "d3" as developCommit3
+DEVELOP_COMMIT "d4" as developCommit4
+DEVELOP_COMMIT "d5" as developCommit5
+DEVELOP_COMMIT "d6" as developCommit6
+DEVELOP_COMMIT "d7" as developCommit7
+DEVELOP_COMMIT "d8" as developCommit8
+DEVELOP_COMMIT "d9" as developCommit9
+DEVELOP_COMMIT "d10" as developCommit10
+DEVELOP_COMMIT "d11" as developCommit11
+
+develop -right-> developCommit1
+developCommit1 -right-> developCommit2
+developCommit2 -right-> developCommit3
+developCommit3 -right-> developCommit4
+developCommit4 -right-> developCommit5
+developCommit5 -right-> developCommit6
+developCommit6 -right-> developCommit7
+developCommit7 -right-> developCommit8
+developCommit8 -right-> developCommit9
+developCommit9 -right-> developCommit10
+developCommit10 -right-> developCommit11
+mainCommit1 -down--> developCommit1
+hotfixesCommit1 -down-> developCommit5
+developCommit6 -up-> releaseCommit1
+releaseCommit2 -down-> developCommit7
+releaseCommit4 -down-> developCommit8
+developCommit10 -up-> releaseCommit5
+releaseCommit5 -down-> developCommit11
+
+rectangle "fonctionnalité 1" as fonctionnalte1 #pink
+
+FEATURE_COMMIT "f1" as featureCommit1
+FEATURE_COMMIT "f2" as featureCommit2
+FEATURE_COMMIT "f3" as featureCommit3
+
+developCommit3 -down-> featureCommit1
+fonctionnalte1 -right-> featureCommit1
+featureCommit1 -right-> featureCommit2
+featureCommit2 -right-> featureCommit3
+featureCommit3 -up-> developCommit6
+
+rectangle "fonctionnalité 2" as fonctionnalte2 #pink
+
+FEATURE_COMMIT "f4" as featureCommit4
+FEATURE_COMMIT "f5" as featureCommit5
+FEATURE_COMMIT "f6" as featureCommit6
+FEATURE_COMMIT "f7" as featureCommit7
+
+developCommit3 -down----> featureCommit4
+fonctionnalte2 -right-> featureCommit4
+featureCommit4 -right-> featureCommit5
+featureCommit5 -right-> featureCommit6
+featureCommit6 -right-> featureCommit7
+featureCommit7 -up-> developCommit9
+
+rectangle "fonctionnalité 3" as fonctionnalte3 #pink
+
+FEATURE_COMMIT "f8" as featureCommit8
+FEATURE_COMMIT "f9" as featureCommit9
+FEATURE_COMMIT "f10" as featureCommit10
+
+developCommit7 -down--> featureCommit8
+fonctionnalte3 -right-> featureCommit8
+featureCommit8 -right-> featureCommit9
+featureCommit9 -right-> featureCommit10
+featureCommit10 -up-> developCommit10
+
+@enduml
