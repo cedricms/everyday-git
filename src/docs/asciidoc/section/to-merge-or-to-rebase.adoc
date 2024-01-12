@@ -1,0 +1,13 @@
+== To Merge Or To Rebase?
+
+=== Merge
+
+image::./img/merge.png[Merge a branch, 75%, 75%]
+
+Keeps the Git history, but adds a commit and, in big teams, clutters the history.
+
+=== Rebase
+
+image::./img/rebase.png[Rebase a branch]
+
+Streamlines the Git history.

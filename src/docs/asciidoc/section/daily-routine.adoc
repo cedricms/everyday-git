@@ -10,3 +10,9 @@ Fetch and prune :
 ```
 git fetch --progress "--all" --prune
 ```
+
+=== Update Your Branch With The Work Of Others
+
+```
+git rebase develop
+```

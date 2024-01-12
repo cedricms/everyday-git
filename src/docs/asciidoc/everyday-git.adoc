@@ -23,7 +23,7 @@ include::./section/something-more-important-has-come-up.adoc[]
 
 include::./section/we-re-working-on-multiple-versions.adoc[]
 
-== To Merge Or To Rebase?
+include::./section/to-merge-or-to-rebase.adoc[]
 
 == Your Git History Is A Mess
 
