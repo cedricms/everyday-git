@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.professional.documents</groupId>
     <artifactId>everyday-git</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>Everyday Git</name>
     <description>A presentation on how to use Git in an everyday real world context.</description>
 
