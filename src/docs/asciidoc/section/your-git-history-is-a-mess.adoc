@@ -38,3 +38,33 @@ git reset origin/<YOUR BRANCH> --hard
 ```
 
 *BEWARE :* Your recent work on this branch will be lost!
+
+=== Squash The Last Commits
+
+```
+git reset HEAD~<NUMBER OF COMMITS>
+```
+
+=== Delete A Branch
+
+Locally :
+```
+git branch -d <LOCAL BRANCH NAME>
+```
+
+Remotely :
+```
+git push origin --delete <REMOTE BRANCH NAME>
+```
+
+Locally and remotely :
+```
+git branch -d <LOCAL BRANCH NAME> && git push origin --delete <REMOTE BRANCH NAME>
+```
+
+=== Change The Author Of The Last Commit
+
+```
+git commit ---amend --author="Author Name email@address.com"
+```
+

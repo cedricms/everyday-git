@@ -21,8 +21,8 @@ include::../plantuml/git-flow.puml[]
 image::./img/svn-type-repository.png[Version branches, 75%, 75%]
 
 === Repository Workflows : Integration Manager
-image::./img/integration-manager-type-repository.png[Version branches, 75%, 75%]
+image::./img/integration-manager-type-repository.png[Integration manager, 75%, 75%]
 
 === Repository Workflows : The Dictator And His Lieutenants
 
-image::./img/dictator-lieutenant-type-repository.png[Version branches, 75%, 75%]
+image::./img/dictator-lieutenant-type-repository.png[The Dictator and his lieutenants, 75%, 75%]

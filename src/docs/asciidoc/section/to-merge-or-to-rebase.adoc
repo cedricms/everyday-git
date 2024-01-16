@@ -1,5 +1,7 @@
 == To Merge Or To Rebase?
 
+image::./img/rebase-and-merge.png[Merge vs rebase]
+
 === Merge
 
 image::./img/merge.png[Merge a branch, 75%, 75%]
