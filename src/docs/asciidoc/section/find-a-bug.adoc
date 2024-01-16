@@ -2,6 +2,23 @@
 
 image::./img/find-a-bug.jpg[Find a bug, 50%, 50%]
 
+=== History Of A File
+
+```
+git log <FILE NAME>
+```
+
+=== Find Out Who Modified What Line Of A File
+
+```
+git blame <FILE NAME>
+```
+
+Limit the lines to see :
+```
+git blame <FILE NAME> -L <START BLAME LINE>,<END BLAME LINE>
+```
+
 === Git Bisect
 
 image::./img/git-bisect.png[Git bisect]
