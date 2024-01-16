@@ -39,6 +39,14 @@ git reset origin/<YOUR BRANCH> --hard
 
 *BEWARE :* Your recent work on this branch will be lost!
 
+=== Your Local Branch Is More Up To Date Than The Remote
+
+```
+git push --force
+```
+
+*BEWARE :* It is better to do this only on *your* feature branch, rather than a shared branch like *develop* or, worse, *main* !
+
 === Squash The Last Commits
 
 ```
@@ -60,6 +68,20 @@ git push origin --delete <REMOTE BRANCH NAME>
 Locally and remotely :
 ```
 git branch -d <LOCAL BRANCH NAME> && git push origin --delete <REMOTE BRANCH NAME>
+```
+
+=== Rename A Branch
+
+Locally :
+```
+git branch -m <OLD NAME> <NEW NAME>
+```
+
+Remotely :
+```
+git branch -m <OLD NAME> <NEW NAME>
+git push origin --delete <OLD NAME>
+git push origin -u <NEW NAME>
 ```
 
 === Change The Author Of The Last Commit
