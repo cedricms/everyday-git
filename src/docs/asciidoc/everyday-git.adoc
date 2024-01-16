@@ -25,19 +25,9 @@ include::./section/we-re-working-on-multiple-versions.adoc[]
 
 include::./section/to-merge-or-to-rebase.adoc[]
 
-== Your Git History Is A Mess
+include::./section/your-git-history-is-a-mess.adoc[]
 
-Interactif rebase.
-
-=== Rebase Compared To A Branch
-
-=== Rewrite Old Commit Messages
-
-=== Condense Commits
-
-== Find A Bug
-
-git bisect
+include::./section/find-a-bug.adoc[]
 
 == Branch Workflows
 

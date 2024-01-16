@@ -1,0 +1,40 @@
+== Your Git History Is A Mess
+
+One solution : Interactif Rebase.
+
+```
+git rebase -i HEAD~<NUMBER OF COMMITS YOU WANT TO REWORK>
+```
+
+Number of commits between two branches :
+
+```
+git log --oneline <CURRENT BRANCH> ^<BRANCH TO COMPARE WITH> | wc -l
+```
+
+=== Rebase Compared To A Branch
+
+```
+git rebase <THE BRANCH YOU WANT TO REBASE TO>
+```
+
+=== Rewrite Old Commit Messages
+
+```
+git rebase -i HEAD~<NUMBER OF COMMITS YOU WANT TO REWORK>
+```
+
+Mark the commits you want to rewrite with *reword* instead of *pick*.
+
+=== Condense Commits
+
+Mark the commits you want to fuse into other commits with *squash* instead of *pick*.
+
+=== You Are Out Of Sync With Work Done By Others And Don't Want To Manage Conflicts
+
+```
+git checkout <YOUR BRANCH>
+git reset origin/<YOUR BRANCH> --hard
+```
+
+*BEWARE :* Your recent work on this branch will be lost!

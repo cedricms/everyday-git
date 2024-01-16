@@ -1,0 +1,32 @@
+== Find A Bug (Quickly)
+
+image::./img/find-a-bug.jpg[Find a bug, 50%, 50%]
+
+=== Git Bisect
+
+image::./img/git-bisect.png[Git bisect]
+
+=== How to (1/2)
+
+Start :
+```
+git bisect start
+```
+Mark a bad commit :
+```
+git bisect bad
+```
+Mark a good commit :
+```
+git bisect good
+```
+
+=== How to (2/2)
+When it is not testable :
+```
+git bisect skip
+```
+When you are done :
+```
+git bisect reset
+```
