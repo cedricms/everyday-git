@@ -17,5 +17,22 @@ git commit --amend -m "an updated commit message"
 This is where commit message crafting pays off :
 
 ```
-git log --no-merges --pretty="format:%h : %s%b" --abbrev-commit <YOUR LAST TAG>..>YOUR MOST RECENT TAG OR "HEAD">
+git log --no-merges --pretty="format:%h : %s%b" --abbrev-commit <YOUR LAST TAG>..<YOUR MOST RECENT TAG OR "HEAD">
+```
+
+```
+ebd141a : Explains how to force a push and rename branches.
+23e1efb : Adds various fixes in the presentation.
+c6d919f : Presents Git workflows.
+10e8049 : Explains the git bisect command.
+822f20a : Adds a section on whether to merge or to rebase your branches.
+feb3ab5 : Explains how to cherry pick.
+954cd87 : Explains how to manage your stashed code.
+9c9d234 : Explains commit message crafting.
+b9d27b3 : Describes some elements for a daily routine.
+6667b3d : Adds a list of Git commands.
+f4f07e4 : Adds a description on Git objects.
+2174c70 : Adds some general information about Git.
+ffddac6 : Sets up the boiler plate elements of the presentation.
+059c93c : Initial commit
 ```
