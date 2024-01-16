@@ -1,0 +1,28 @@
+== Workflows
+
+How Teams Work
+
+=== Branch Workflows
+
+=== Branch Workflows : Version Branches
+
+image::./img/version-branches.png[Version branches, 75%, 75%]
+
+=== Branch Workflows : GitFlow
+
+["plantuml","git-flow", "png"]
+----
+include::../plantuml/git-flow.puml[]
+----
+
+=== Repository Workflows
+
+=== Repository Workflows : SVN Type
+image::./img/svn-type-repository.png[Version branches, 75%, 75%]
+
+=== Repository Workflows : Integration Manager
+image::./img/integration-manager-type-repository.png[Version branches, 75%, 75%]
+
+=== Repository Workflows : The Dictator And His Lieutenants
+
+image::./img/dictator-lieutenant-type-repository.png[Version branches, 75%, 75%]

@@ -25,7 +25,7 @@ mainCommit1 -right-> mainCommit2
 mainCommit2 -right-> mainCommit3
 mainCommit3 -right-> mainCommit4
 
-rectangle "correctifs à chaud" as hotfixes #orange
+rectangle "hotfixes" as hotfixes #orange
 
 HOTFIXES_COMMIT "h1" as hotfixesCommit1
 
@@ -33,7 +33,7 @@ hotfixes -right-> hotfixesCommit1
 mainCommit1 -down-> hotfixesCommit1
 hotfixesCommit1 -up-> mainCommit2
 
-rectangle "branches de recettes" as release #lightgreen
+rectangle "release branches" as release #lightgreen
 
 RELEASE_COMMIT "r1" as releaseCommit1
 RELEASE_COMMIT "r2" as releaseCommit2
@@ -82,19 +82,19 @@ releaseCommit4 -down-> developCommit8
 developCommit10 -up-> releaseCommit5
 releaseCommit5 -down-> developCommit11
 
-rectangle "fonctionnalité 1" as fonctionnalte1 #pink
+rectangle "feature 1" as feature1 #pink
 
 FEATURE_COMMIT "f1" as featureCommit1
 FEATURE_COMMIT "f2" as featureCommit2
 FEATURE_COMMIT "f3" as featureCommit3
 
 developCommit3 -down-> featureCommit1
-fonctionnalte1 -right-> featureCommit1
+feature1 -right-> featureCommit1
 featureCommit1 -right-> featureCommit2
 featureCommit2 -right-> featureCommit3
 featureCommit3 -up-> developCommit6
 
-rectangle "fonctionnalité 2" as fonctionnalte2 #pink
+rectangle "feature 2" as feature2 #pink
 
 FEATURE_COMMIT "f4" as featureCommit4
 FEATURE_COMMIT "f5" as featureCommit5
@@ -102,20 +102,20 @@ FEATURE_COMMIT "f6" as featureCommit6
 FEATURE_COMMIT "f7" as featureCommit7
 
 developCommit3 -down----> featureCommit4
-fonctionnalte2 -right-> featureCommit4
+feature2 -right-> featureCommit4
 featureCommit4 -right-> featureCommit5
 featureCommit5 -right-> featureCommit6
 featureCommit6 -right-> featureCommit7
 featureCommit7 -up-> developCommit9
 
-rectangle "fonctionnalité 3" as fonctionnalte3 #pink
+rectangle "feature 3" as feature3 #pink
 
 FEATURE_COMMIT "f8" as featureCommit8
 FEATURE_COMMIT "f9" as featureCommit9
 FEATURE_COMMIT "f10" as featureCommit10
 
 developCommit7 -down--> featureCommit8
-fonctionnalte3 -right-> featureCommit8
+feature3 -right-> featureCommit8
 featureCommit8 -right-> featureCommit9
 featureCommit9 -right-> featureCommit10
 featureCommit10 -up-> developCommit10

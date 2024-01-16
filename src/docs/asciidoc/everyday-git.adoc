@@ -29,6 +29,6 @@ include::./section/your-git-history-is-a-mess.adoc[]
 
 include::./section/find-a-bug.adoc[]
 
-== Branch Workflows
+include::./section/workflows.adoc[]
 
-=== GitFlow
+== That's All Folks :)
